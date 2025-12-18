@@ -103,39 +103,51 @@ export default function Home() {
           
           <div className={styles.galleryGrid}>
             <div className={`${styles.galleryItem} ${styles.item1}`}>
-              <div className={styles.galleryPlaceholder}>
-                <span>Project 1</span>
-              </div>
+              <img 
+                src="/cardimages/project1.jpg" 
+                alt="Project 1" 
+                className={styles.galleryImage}
+              />
             </div>
             
             <div className={`${styles.galleryItem} ${styles.item2}`}>
-              <div className={styles.galleryPlaceholder}>
-                <span>Project 2</span>
-              </div>
+              <img 
+                src="/cardimages/project2.jpg" 
+                alt="Project 2" 
+                className={styles.galleryImage}
+              />
             </div>
             
             <div className={`${styles.galleryItem} ${styles.item3}`}>
-              <div className={styles.galleryPlaceholder}>
-                <span>Project 3</span>
-              </div>
+              <img 
+                src="/cardimages/project3.jpg" 
+                alt="Project 3" 
+                className={styles.galleryImage}
+              />
             </div>
             
             <div className={`${styles.galleryItem} ${styles.item4}`}>
-              <div className={styles.galleryPlaceholder}>
-                <span>Project 4</span>
-              </div>
+              <img 
+                src="/cardimages/project4.jpg" 
+                alt="Project 4" 
+                className={styles.galleryImage}
+              />
             </div>
             
             <div className={`${styles.galleryItem} ${styles.item5}`}>
-              <div className={styles.galleryPlaceholder}>
-                <span>Project 5</span>
-              </div>
+              <img 
+                src="/cardimages/project5.jpg" 
+                alt="Project 5" 
+                className={styles.galleryImage}
+              />
             </div>
             
             <div className={`${styles.galleryItem} ${styles.item6}`}>
-              <div className={styles.galleryPlaceholder}>
-                <span>Project 6</span>
-              </div>
+              <img 
+                src="/cardimages/project6.jpg" 
+                alt="Project 6" 
+                className={styles.galleryImage}
+              />
             </div>
           </div>
         </div>
@@ -148,8 +160,12 @@ export default function Home() {
         <div className={styles.aboutContainer}>
           <div className={styles.aboutGrid}>
             <div className={styles.aboutImageContainer}>
-              <div className={styles.aboutImagePlaceholder}>
-                <span>Portrait</span>
+              <div className={styles.aboutImageWrapper}>
+                <img 
+                  src="/founder/profile.jpeg" 
+                  alt="Abdullah Khalid" 
+                  className={styles.aboutImage}
+                />
               </div>
               <div className={styles.aboutAccent}></div>
             </div>

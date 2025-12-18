@@ -376,15 +376,12 @@
   transform: translateY(-10px);
 }
 
-.galleryPlaceholder {
+.galleryImage {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #3a3d3a 0%, #2a2d2a 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.25rem;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* Unique shaped items */
@@ -528,18 +525,20 @@
   height: 600px;
 }
 
-.aboutImagePlaceholder {
+.aboutImageWrapper {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #3a3d3a 0%, #2a2d2a 100%);
   border-radius: 30px 30px 200px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1.5rem;
   position: relative;
   overflow: hidden;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .aboutAccent {
