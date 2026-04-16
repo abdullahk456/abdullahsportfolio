@@ -103,51 +103,39 @@ export default function Home() {
           
           <div className={styles.galleryGrid}>
             <div className={`${styles.galleryItem} ${styles.item1}`}>
-              <img 
-                src="/cardimages/project1.jpg" 
-                alt="Project 1" 
-                className={styles.galleryImage}
-              />
+              <a href="https://www.youtube.com/shorts/7uaJ7Gk33Ek" target="_blank" rel="noopener noreferrer">
+                <img src="/cardimages/project1.jpg" alt="Project 1" className={styles.galleryImage} />
+              </a>
             </div>
-            
+
             <div className={`${styles.galleryItem} ${styles.item2}`}>
-              <img 
-                src="/cardimages/project2.jpg" 
-                alt="Project 2" 
-                className={styles.galleryImage}
-              />
+              <a href="https://www.youtube.com/watch?v=NpzZrUSOccI&pp=ygUbaW1hYW4gZm9yIGphbm5haCAgY2hyaXN0bWFz" target="_blank" rel="noopener noreferrer">
+                <img src="/cardimages/project2.jpg" alt="Project 2" className={styles.galleryImage} />
+              </a>
             </div>
-            
+
             <div className={`${styles.galleryItem} ${styles.item3}`}>
-              <img 
-                src="/cardimages/project3.jpg" 
-                alt="Project 3" 
-                className={styles.galleryImage}
-              />
+              <a href="https://www.youtube.com/shorts/lU1oY9-o3nA" target="_blank" rel="noopener noreferrer">
+                <img src="/cardimages/project3.jpg" alt="Project 3" className={styles.galleryImage} />
+              </a>
             </div>
-            
+
             <div className={`${styles.galleryItem} ${styles.item4}`}>
-              <img 
-                src="/cardimages/project4.jpg" 
-                alt="Project 4" 
-                className={styles.galleryImage}
-              />
+              <a href="https://www.youtube.com/shorts/iFP4Qer5bXs" target="_blank" rel="noopener noreferrer">
+                <img src="/cardimages/project4.jpg" alt="Project 4" className={styles.galleryImage} />
+              </a>
             </div>
-            
+
             <div className={`${styles.galleryItem} ${styles.item5}`}>
-              <img 
-                src="/cardimages/project5.jpg" 
-                alt="Project 5" 
-                className={styles.galleryImage}
-              />
+              <a href="https://www.youtube.com/shorts/HWcWGapcW8A" target="_blank" rel="noopener noreferrer">
+                <img src="/cardimages/project5.jpg" alt="Project 5" className={styles.galleryImage} />
+              </a>
             </div>
-            
+
             <div className={`${styles.galleryItem} ${styles.item6}`}>
-              <img 
-                src="/cardimages/project6.jpg" 
-                alt="Project 6" 
-                className={styles.galleryImage}
-              />
+              <a href="https://www.youtube.com/watch?v=hxdMmr0TGKs" target="_blank" rel="noopener noreferrer">
+                <img src="/cardimages/project6.jpg" alt="Project 6" className={styles.galleryImage} />
+              </a>
             </div>
           </div>
         </div>
