@@ -32,7 +32,13 @@ export default function Navbar() {
               <button onClick={() => scrollToSection('hero')}>HOME</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('work')}>WORK</button>
+              <button onClick={() => scrollToSection('design')}>DESIGN</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('videos')}>VIDEOS</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('projects')}>PROJECTS</button>
             </li>
             <li>
               <button onClick={() => scrollToSection('gallery')}>GALLERY</button>
@@ -64,8 +70,14 @@ export default function Navbar() {
           <button onClick={() => scrollToSection('hero')} className={styles.mobileNavBtn}>
             HOME
           </button>
-          <button onClick={() => scrollToSection('work')} className={styles.mobileNavBtn}>
-            WORK
+          <button onClick={() => scrollToSection('design')} className={styles.mobileNavBtn}>
+            DESIGN
+          </button>
+          <button onClick={() => scrollToSection('videos')} className={styles.mobileNavBtn}>
+            VIDEOS
+          </button>
+          <button onClick={() => scrollToSection('projects')} className={styles.mobileNavBtn}>
+            PROJECTS
           </button>
           <button onClick={() => scrollToSection('gallery')} className={styles.mobileNavBtn}>
             GALLERY

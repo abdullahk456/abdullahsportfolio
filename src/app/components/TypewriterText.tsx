@@ -9,14 +9,14 @@ interface TypewriterTextProps {
 export default function TypewriterText({ className }: TypewriterTextProps) {
   const texts = [
     {
-      line1: "I'm a Muslim filmmaker using storytelling",
-      line2: "to inspire faith, purpose, and positive",
-      line3: "change across the world."
+      line1: "Graphic Designer & Faith-Based Content Creator",
+      line2: "I create clean, meaningful visuals for Islamic",
+      line3: "organizations, education, and community."
     },
     {
-      line1: "أنا صانع أفلام مسلم أستخدم القصص",
-      line2: "لإلهام الإيمان والهدف والتغيير",
-      line3: "الإيجابي في جميع أنحاء العالم"
+      line1: "مصمم جرافيك وصانع محتوى إسلامي",
+      line2: "أصمم محتوى بصرياً هادفاً للمنظمات الإسلامية",
+      line3: "والتعليم والمجتمعات المسلمة"
     }
   ];
 

@@ -57,11 +57,11 @@
 
 /* Hero section - background handled via inline styles in page.tsx */
 .heroSection {
-  min-height: 75vh;
+  min-height: 85vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 12rem 4rem 4rem 4rem;
+  padding: 12rem 4rem 6rem 4rem;
   position: relative;
 }
 
@@ -88,8 +88,8 @@
 }
 
 .heroTitleWrapper {
-  height: 10rem;
-  margin-bottom: 8rem;
+  min-height: 14rem;
+  margin-bottom: 2rem;
   max-width: 1300px;
 }
 
@@ -354,8 +354,16 @@
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 400;
   color: #ffffff;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   text-align: center;
+}
+
+.gallerySubtitle {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  color: rgba(255, 255, 255, 0.45);
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: 0.04em;
 }
 
 .galleryGrid {
@@ -688,8 +696,8 @@
   }
   
   .heroTitleWrapper {
-    height: 12rem;
-    margin-bottom: 5rem;
+    min-height: 16rem;
+    margin-bottom: 1.5rem;
   }
   
   .heroContact {
@@ -899,4 +907,491 @@
   .submitBtn {
     width: 100%;
   }
+}
+
+/* ─── Hero CTA Buttons ──────────────────────────────────── */
+
+.heroSubtitle {
+  font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.06em;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.heroCta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.heroCtaBtn {
+  padding: 0.9rem 2rem;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.heroCtaBtn:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.heroCtaBtnOutline {
+  padding: 0.9rem 2rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.heroCtaBtnOutline:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 10rem 2rem 4rem 2rem;
+    min-height: 90vh;
+  }
+
+  .heroSubtitle {
+    font-size: 0.78rem;
+  }
+
+  .heroCta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroCtaBtn,
+  .heroCtaBtnOutline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ─── Graphic Design Portfolio ──────────────────────────── */
+
+.designSection {
+  padding: 8rem 2rem;
+  background-color: #272a27;
+}
+
+.designContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.designHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.designTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.designSubtitle {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.designGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 5rem;
+}
+
+.designCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.designCard:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-4px);
+}
+
+.designCardAccent {
+  width: 40px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
+  transition: width 0.3s ease;
+}
+
+.designCard:hover .designCardAccent {
+  width: 60px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.designCardCategory {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.designCardDesc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.designCardDeliverablesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.designCardDeliverable {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.25rem 0.625rem;
+  line-height: 1.4;
+}
+
+.servicesBlock {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 3.5rem;
+  text-align: center;
+}
+
+.servicesLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 1.5rem;
+}
+
+.servicesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.servicePill {
+  padding: 0.6rem 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.servicePill:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+}
+
+@media (max-width: 968px) {
+  .designGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .designGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Recent Short-Form Content ─────────────────────────── */
+
+.videosSection {
+  padding: 8rem 2rem;
+  background-color: #272a27;
+}
+
+.videosContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.videosHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.videosTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.videosSubtitle {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 660px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.videosGrid {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.videoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.videoFrame {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.videoCardLabel {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.watchBtn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-family: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.watchBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.skillsTags {
+  display: flex;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.skillTag {
+  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 768px) {
+  .videosGrid {
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoFrame iframe {
+    width: 280px !important;
+    height: 497px !important;
+  }
+}
+
+/* ─── Project Work / Case Studies ───────────────────────── */
+
+.projectsSection {
+  padding: 8rem 2rem;
+  background-color: #272a27;
+}
+
+.projectsContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projectsHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.projectsTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+}
+
+.projectsSubtitle {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.projectCard {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: border-color 0.3s ease;
+}
+
+.projectCard:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.projectOrgName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.projectDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.projectField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.projectFieldLabel {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.projectFieldValue {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Relevant Work for Islamic Organizations ────────────── */
+
+.islamicWorkSection {
+  padding: 7rem 2rem;
+  background-color: #272a27;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.islamicWorkContainer {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.islamicWorkTitle {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.islamicWorkBody {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.islamicHighlights {
+  display: flex;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.highlightPill {
+  padding: 0.75rem 1.75rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.highlightPill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
 }
