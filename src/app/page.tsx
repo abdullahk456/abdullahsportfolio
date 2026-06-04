@@ -269,21 +269,6 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* ── Organizations Bar ─────────────────────────────── */}
-      <AnimatedSection>
-        <section className={styles.brandsSection}>
-          <div className={styles.brandsContainer}>
-            <div className={styles.brandLogo}>PMI</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>IMAAN FOR JANNAH</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>EDEN GARDENS</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>DREXEL MUSLIM ALUMNI</div>
-          </div>
-        </section>
-      </AnimatedSection>
-
       {/* ── About + Mission ───────────────────────────────── */}
       <AnimatedSection>
         <section id="about" className={styles.aboutSection}>
