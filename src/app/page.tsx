@@ -66,22 +66,6 @@ const projects = [
     result: "Built a consistent visual identity for a growing Islamic content platform",
   },
   {
-    org: "Al Aqsa Islamic Academy",
-    role: "Creative Support / Educator",
-    work: "Educational graphics, event flyers, school promotions, classroom visuals",
-    tools: "Canva, Photoshop",
-    purpose: "Support Islamic school communication and student engagement",
-    result: "Created clear, branded materials for an Islamic school community",
-  },
-  {
-    org: "GCLEA",
-    role: "Media Content Creator",
-    work: "Social media posts, event coverage visuals, community content",
-    tools: "Premiere, Canva",
-    purpose: "Strengthen community engagement through visual content",
-    result: "Provided visual support for Islamic community programming",
-  },
-  {
     org: "Eden Gardens",
     role: "Graphic & Video Support",
     work: "Event graphics, promotional content, short-form videos",
@@ -380,7 +364,7 @@ export default function Home() {
             <div className={styles.galleryGrid}>
               <div className={`${styles.galleryItem} ${styles.item1}`}>
                 <a
-                  href="https://www.youtube.com/shorts/7uaJ7Gk33Ek"
+                  href="https://www.youtube.com/watch?v=NpzZrUSOccI&t=38s"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -393,7 +377,7 @@ export default function Home() {
               </div>
               <div className={`${styles.galleryItem} ${styles.item2}`}>
                 <a
-                  href="https://www.youtube.com/watch?v=NpzZrUSOccI&pp=ygUbaW1hYW4gZm9yIGphbm5haCAgY2hyaXN0bWFz"
+                  href="https://www.youtube.com/shorts/7uaJ7Gk33Ek"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -406,7 +390,7 @@ export default function Home() {
               </div>
               <div className={`${styles.galleryItem} ${styles.item3}`}>
                 <a
-                  href="https://www.youtube.com/shorts/lU1oY9-o3nA"
+                  href="https://www.youtube.com/shorts/iFP4Qer5bXs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -419,7 +403,7 @@ export default function Home() {
               </div>
               <div className={`${styles.galleryItem} ${styles.item4}`}>
                 <a
-                  href="https://www.youtube.com/shorts/iFP4Qer5bXs"
+                  href="https://www.youtube.com/watch?v=YlQHRKG8KgQ&t=7s"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -432,7 +416,7 @@ export default function Home() {
               </div>
               <div className={`${styles.galleryItem} ${styles.item5}`}>
                 <a
-                  href="https://www.youtube.com/shorts/HWcWGapcW8A"
+                  href="https://www.youtube.com/shorts/dNg4apX8NKY"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -445,7 +429,7 @@ export default function Home() {
               </div>
               <div className={`${styles.galleryItem} ${styles.item6}`}>
                 <a
-                  href="https://www.youtube.com/watch?v=hxdMmr0TGKs"
+                  href="https://www.youtube.com/shorts/WWj8RVfgZRg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
