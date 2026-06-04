@@ -317,19 +317,19 @@ export default function Home() {
 
                 <div className={styles.aboutStats}>
                   <div className={styles.statItem}>
-                    <CounterAnimation end={6} className={styles.statNumber} />
+                    <CounterAnimation end={5} className={styles.statNumber} />
                     <div className={styles.statLabel}>Organizations</div>
                   </div>
                   <div className={styles.statDivider}></div>
                   <div className={styles.statItem}>
                     {/* TODO: Update this number as your project count grows */}
-                    <CounterAnimation end={50} className={styles.statNumber} />
+                    <CounterAnimation end={300} className={styles.statNumber} />
                     <div className={styles.statLabel}>Creative Projects</div>
                   </div>
                   <div className={styles.statDivider}></div>
                   <div className={styles.statItem}>
                     {/* TODO: Update this string as your reach grows */}
-                    <CounterAnimation end="100k+" className={styles.statNumber} />
+                    <CounterAnimation end="10K+" className={styles.statNumber} />
                     <div className={styles.statLabel}>Monthly Reach</div>
                   </div>
                 </div>
