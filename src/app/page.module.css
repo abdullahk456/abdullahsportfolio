@@ -1276,6 +1276,18 @@
   line-height: 1.2;
 }
 
+.projectOrgLink {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.projectOrgLink:hover {
+  opacity: 0.65;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .projectDivider {
   width: 100%;
   height: 1px;

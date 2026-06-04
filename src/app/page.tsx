@@ -57,6 +57,7 @@ const videos = [
 const projects = [
   {
     org: "Imaan for Jannah",
+    link: "https://linktr.ee/imaan_for_jannah",
     role: "Content Designer / Creator",
     work: "Social media graphics, faith reminders, short-form edits, content layouts",
     tools: "Premiere, Canva, CapCut",
@@ -65,6 +66,7 @@ const projects = [
   },
   {
     org: "Eden Gardens",
+    link: "https://www.edengardensnj.com/",
     role: "Graphic & Video Support",
     work: "Event graphics, promotional content, short-form videos",
     tools: "Premiere, Canva, CapCut",
@@ -73,6 +75,7 @@ const projects = [
   },
   {
     org: "PMI",
+    link: "https://www.phillymi.org/",
     role: "Content Creator",
     work: "Branded graphics, social posts, community-focused visuals",
     tools: "Canva, Illustrator",
@@ -81,6 +84,7 @@ const projects = [
   },
   {
     org: "Drexel Muslim Alumni",
+    link: "https://www.instagram.com/drexelumuslimalumni/",
     role: "Creative Volunteer",
     work: "Event flyers, social posts, alumni community graphics",
     tools: "Canva",
@@ -240,7 +244,11 @@ export default function Home() {
             <div className={styles.projectsGrid}>
               {projects.map((p) => (
                 <div key={p.org} className={styles.projectCard}>
-                  <h3 className={styles.projectOrgName}>{p.org}</h3>
+                  <h3 className={styles.projectOrgName}>
+                    <a href={p.link} target="_blank" rel="noopener noreferrer" className={styles.projectOrgLink}>
+                      {p.org}
+                    </a>
+                  </h3>
                   <div className={styles.projectDivider} />
                   <div className={styles.projectField}>
                     <span className={styles.projectFieldLabel}>Role</span>
