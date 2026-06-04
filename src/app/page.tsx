@@ -172,21 +172,6 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* ── Organizations Bar ─────────────────────────────── */}
-      <AnimatedSection>
-        <section className={styles.brandsSection}>
-          <div className={styles.brandsContainer}>
-            <div className={styles.brandLogo}>PMI</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>IMAAN FOR JANNAH</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>EDEN GARDENS</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>DREXEL MUSLIM ALUMNI</div>
-          </div>
-        </section>
-      </AnimatedSection>
-
       {/* ── My Work (video portfolio) ─────────────────────── */}
       <AnimatedSection>
         <section id="videos" className={styles.videosSection}>
@@ -284,47 +269,17 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* ── Visual Stories Gallery ────────────────────────── */}
+      {/* ── Organizations Bar ─────────────────────────────── */}
       <AnimatedSection>
-        <section id="gallery" className={styles.gallerySection}>
-          <div className={styles.galleryContainer}>
-            <h2 className={styles.galleryTitle}>Visual Stories Gallery</h2>
-            <p className={styles.gallerySubtitle}>
-              Video production &amp; visual storytelling projects
-            </p>
-
-            <div className={styles.galleryGrid}>
-              <div className={`${styles.galleryItem} ${styles.item1}`}>
-                <a href="https://www.youtube.com/watch?v=NpzZrUSOccI&t=38s" target="_blank" rel="noopener noreferrer">
-                  <img src="/cardimages/project1.jpg" alt="Project 1" className={styles.galleryImage} />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item2}`}>
-                <a href="https://www.youtube.com/shorts/7uaJ7Gk33Ek" target="_blank" rel="noopener noreferrer">
-                  <img src="/cardimages/project2.jpg" alt="Project 2" className={styles.galleryImage} />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item3}`}>
-                <a href="https://www.youtube.com/shorts/iFP4Qer5bXs" target="_blank" rel="noopener noreferrer">
-                  <img src="/cardimages/project3.jpg" alt="Project 3" className={styles.galleryImage} />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item4}`}>
-                <a href="https://www.youtube.com/watch?v=YlQHRKG8KgQ&t=7s" target="_blank" rel="noopener noreferrer">
-                  <img src="/cardimages/project4.jpg" alt="Project 4" className={styles.galleryImage} />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item5}`}>
-                <a href="https://www.youtube.com/shorts/dNg4apX8NKY" target="_blank" rel="noopener noreferrer">
-                  <img src="/cardimages/project5.jpg" alt="Project 5" className={styles.galleryImage} />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item6}`}>
-                <a href="https://www.youtube.com/shorts/WWj8RVfgZRg" target="_blank" rel="noopener noreferrer">
-                  <img src="/cardimages/project6.jpg" alt="Project 6" className={styles.galleryImage} />
-                </a>
-              </div>
-            </div>
+        <section className={styles.brandsSection}>
+          <div className={styles.brandsContainer}>
+            <div className={styles.brandLogo}>PMI</div>
+            <div className={styles.brandSeparator}></div>
+            <div className={styles.brandLogo}>IMAAN FOR JANNAH</div>
+            <div className={styles.brandSeparator}></div>
+            <div className={styles.brandLogo}>EDEN GARDENS</div>
+            <div className={styles.brandSeparator}></div>
+            <div className={styles.brandLogo}>DREXEL MUSLIM ALUMNI</div>
           </div>
         </section>
       </AnimatedSection>
