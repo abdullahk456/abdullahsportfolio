@@ -1395,3 +1395,101 @@
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
+
+/* ─── Video Card Grid (My Work section) ─────────────────── */
+
+.vidGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.vidCard {
+  display: block;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.vidThumbWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.vidThumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.vidCard:hover .vidThumb {
+  transform: scale(1.05);
+}
+
+.vidOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.vidCard:hover .vidOverlay {
+  opacity: 1;
+}
+
+.vidPlayBtn {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vidPlayArrow {
+  width: 24px;
+  height: 24px;
+  color: #000000;
+  margin-left: 3px;
+}
+
+.vidFormatBadge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.65rem;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 968px) {
+  .vidGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .vidGrid {
+    grid-template-columns: 1fr;
+  }
+}

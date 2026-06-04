@@ -41,9 +41,6 @@ export default function Navbar() {
               <button onClick={() => scrollToSection('projects')}>PROJECTS</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('gallery')}>GALLERY</button>
-            </li>
-            <li>
               <button onClick={() => scrollToSection('about')}>ABOUT</button>
             </li>
             <li>
@@ -78,9 +75,6 @@ export default function Navbar() {
           </button>
           <button onClick={() => scrollToSection('projects')} className={styles.mobileNavBtn}>
             PROJECTS
-          </button>
-          <button onClick={() => scrollToSection('gallery')} className={styles.mobileNavBtn}>
-            GALLERY
           </button>
           <button onClick={() => scrollToSection('about')} className={styles.mobileNavBtn}>
             ABOUT

@@ -56,6 +56,15 @@ const servicesList = [
   "School / community announcements",
 ];
 
+const videos = [
+  { id: "NpzZrUSOccI", url: "https://www.youtube.com/watch?v=NpzZrUSOccI&t=38s", format: "Long Form" },
+  { id: "7uaJ7Gk33Ek", url: "https://www.youtube.com/shorts/7uaJ7Gk33Ek",        format: "Short"     },
+  { id: "iFP4Qer5bXs", url: "https://www.youtube.com/shorts/iFP4Qer5bXs",        format: "Short"     },
+  { id: "YlQHRKG8KgQ", url: "https://www.youtube.com/watch?v=YlQHRKG8KgQ&t=7s",  format: "Long Form" },
+  { id: "dNg4apX8NKY", url: "https://www.youtube.com/shorts/dNg4apX8NKY",        format: "Short"     },
+  { id: "WWj8RVfgZRg", url: "https://www.youtube.com/shorts/WWj8RVfgZRg",        format: "Short"     },
+];
+
 const projects = [
   {
     org: "Imaan for Jannah",
@@ -136,7 +145,7 @@ export default function Home() {
               View Design Work
             </a>
             <a href="#videos" className={styles.heroCtaBtnOutline}>
-              Watch Recent Videos
+              Watch My Work
             </a>
           </div>
         </div>
@@ -204,68 +213,44 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* ── Recent Short-Form Content ──────────────────────── */}
+      {/* ── My Work (video portfolio) ─────────────────────── */}
       <AnimatedSection>
         <section id="videos" className={styles.videosSection}>
           <div className={styles.videosContainer}>
             <div className={styles.videosHeader}>
-              <h2 className={styles.videosTitle}>Recent Short-Form Content</h2>
+              <h2 className={styles.videosTitle}>My Work</h2>
               <p className={styles.videosSubtitle}>
-                These videos showcase typography, pacing, visual composition, editing, and
-                faith-based storytelling — core skills in Islamic content design.
+                Long-form and short-form visual content — Islamic education, community storytelling,
+                and faith-based media.
               </p>
             </div>
 
-            <div className={styles.videosGrid}>
-              <div className={styles.videoCard}>
-                <div className={styles.videoFrame}>
-                  {/* Embed: https://www.youtube.com/shorts/WWj8RVfgZRg */}
-                  <iframe
-                    width="320"
-                    height="568"
-                    src="https://www.youtube.com/embed/WWj8RVfgZRg"
-                    title="Faith-Based Short #1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    loading="lazy"
-                    style={{ display: "block", border: "none" }}
-                  />
-                </div>
-                <p className={styles.videoCardLabel}>Faith-Based Short #1</p>
+            <div className={styles.vidGrid}>
+              {videos.map((v) => (
                 <a
-                  href="https://www.youtube.com/shorts/WWj8RVfgZRg"
+                  key={v.id}
+                  href={v.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={styles.watchBtn}
+                  className={styles.vidCard}
                 >
-                  Watch Short
+                  <div className={styles.vidThumbWrap}>
+                    <img
+                      src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
+                      alt={`${v.format} video`}
+                      className={styles.vidThumb}
+                    />
+                    <div className={styles.vidOverlay}>
+                      <div className={styles.vidPlayBtn}>
+                        <svg viewBox="0 0 24 24" fill="currentColor" className={styles.vidPlayArrow}>
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                    <span className={styles.vidFormatBadge}>{v.format}</span>
+                  </div>
                 </a>
-              </div>
-
-              <div className={styles.videoCard}>
-                <div className={styles.videoFrame}>
-                  {/* Embed: https://www.youtube.com/shorts/vGSjRz1eDbs */}
-                  <iframe
-                    width="320"
-                    height="568"
-                    src="https://www.youtube.com/embed/vGSjRz1eDbs"
-                    title="Faith-Based Short #2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    loading="lazy"
-                    style={{ display: "block", border: "none" }}
-                  />
-                </div>
-                <p className={styles.videoCardLabel}>Faith-Based Short #2</p>
-                <a
-                  href="https://www.youtube.com/shorts/vGSjRz1eDbs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.watchBtn}
-                >
-                  Watch Short
-                </a>
-              </div>
+              ))}
             </div>
 
             <div className={styles.skillsTags}>
@@ -347,99 +332,6 @@ export default function Home() {
                   {pill}
                 </span>
               ))}
-            </div>
-          </div>
-        </section>
-      </AnimatedSection>
-
-      {/* ── Visual Stories Gallery ────────────────────────── */}
-      <AnimatedSection>
-        <section id="gallery" className={styles.gallerySection}>
-          <div className={styles.galleryContainer}>
-            <h2 className={styles.galleryTitle}>Visual Stories Gallery</h2>
-            <p className={styles.gallerySubtitle}>
-              Video production &amp; visual storytelling projects
-            </p>
-
-            <div className={styles.galleryGrid}>
-              <div className={`${styles.galleryItem} ${styles.item1}`}>
-                <a
-                  href="https://www.youtube.com/watch?v=NpzZrUSOccI&t=38s"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/cardimages/project1.jpg"
-                    alt="Project 1"
-                    className={styles.galleryImage}
-                  />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item2}`}>
-                <a
-                  href="https://www.youtube.com/shorts/7uaJ7Gk33Ek"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/cardimages/project2.jpg"
-                    alt="Project 2"
-                    className={styles.galleryImage}
-                  />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item3}`}>
-                <a
-                  href="https://www.youtube.com/shorts/iFP4Qer5bXs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/cardimages/project3.jpg"
-                    alt="Project 3"
-                    className={styles.galleryImage}
-                  />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item4}`}>
-                <a
-                  href="https://www.youtube.com/watch?v=YlQHRKG8KgQ&t=7s"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/cardimages/project4.jpg"
-                    alt="Project 4"
-                    className={styles.galleryImage}
-                  />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item5}`}>
-                <a
-                  href="https://www.youtube.com/shorts/dNg4apX8NKY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/cardimages/project5.jpg"
-                    alt="Project 5"
-                    className={styles.galleryImage}
-                  />
-                </a>
-              </div>
-              <div className={`${styles.galleryItem} ${styles.item6}`}>
-                <a
-                  href="https://www.youtube.com/shorts/WWj8RVfgZRg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/cardimages/project6.jpg"
-                    alt="Project 6"
-                    className={styles.galleryImage}
-                  />
-                </a>
-              </div>
             </div>
           </div>
         </section>
