@@ -45,17 +45,6 @@ const designCategories = [
   },
 ];
 
-const servicesList = [
-  "Instagram carousels",
-  "Event flyers",
-  "Lecture / program posters",
-  "YouTube thumbnails",
-  "Short-form video covers",
-  "Islamic reminder posts",
-  "Brand kits",
-  "School / community announcements",
-];
-
 const videos = [
   { id: "NpzZrUSOccI", url: "https://www.youtube.com/watch?v=NpzZrUSOccI&t=38s", format: "Long Form" },
   { id: "7uaJ7Gk33Ek", url: "https://www.youtube.com/shorts/7uaJ7Gk33Ek",        format: "Short"     },
@@ -179,17 +168,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-            <div className={styles.servicesBlock}>
-              <p className={styles.servicesLabel}>What I Can Create</p>
-              <div className={styles.servicesList}>
-                {servicesList.map((s) => (
-                  <span key={s} className={styles.servicePill}>
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </section>
       </AnimatedSection>
@@ -200,11 +178,7 @@ export default function Home() {
           <div className={styles.brandsContainer}>
             <div className={styles.brandLogo}>PMI</div>
             <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>GCLEA</div>
-            <div className={styles.brandSeparator}></div>
             <div className={styles.brandLogo}>IMAAN FOR JANNAH</div>
-            <div className={styles.brandSeparator}></div>
-            <div className={styles.brandLogo}>AL AQSA ISLAMIC ACADEMY</div>
             <div className={styles.brandSeparator}></div>
             <div className={styles.brandLogo}>EDEN GARDENS</div>
             <div className={styles.brandSeparator}></div>
@@ -310,28 +284,46 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-      {/* ── Relevant Work for Islamic Organizations ───────── */}
+      {/* ── Visual Stories Gallery ────────────────────────── */}
       <AnimatedSection>
-        <section id="islamic-work" className={styles.islamicWorkSection}>
-          <div className={styles.islamicWorkContainer}>
-            <h2 className={styles.islamicWorkTitle}>Built for Faith-Based Teams</h2>
-            <p className={styles.islamicWorkBody}>
-              I&apos;ve worked on faith-centered creative projects involving Islamic education,
-              community events, social media content, and nonprofit-style outreach. My focus is on
-              making Islamic messages clear, respectful, visually appealing, and easy to engage with
-              across platforms.
+        <section id="gallery" className={styles.gallerySection}>
+          <div className={styles.galleryContainer}>
+            <h2 className={styles.galleryTitle}>Visual Stories Gallery</h2>
+            <p className={styles.gallerySubtitle}>
+              Video production &amp; visual storytelling projects
             </p>
-            <div className={styles.islamicHighlights}>
-              {[
-                "Islamic Education",
-                "Social Media Graphics",
-                "Community Events",
-                "Short-Form Video",
-              ].map((pill) => (
-                <span key={pill} className={styles.highlightPill}>
-                  {pill}
-                </span>
-              ))}
+
+            <div className={styles.galleryGrid}>
+              <div className={`${styles.galleryItem} ${styles.item1}`}>
+                <a href="https://www.youtube.com/watch?v=NpzZrUSOccI&t=38s" target="_blank" rel="noopener noreferrer">
+                  <img src="/cardimages/project1.jpg" alt="Project 1" className={styles.galleryImage} />
+                </a>
+              </div>
+              <div className={`${styles.galleryItem} ${styles.item2}`}>
+                <a href="https://www.youtube.com/shorts/7uaJ7Gk33Ek" target="_blank" rel="noopener noreferrer">
+                  <img src="/cardimages/project2.jpg" alt="Project 2" className={styles.galleryImage} />
+                </a>
+              </div>
+              <div className={`${styles.galleryItem} ${styles.item3}`}>
+                <a href="https://www.youtube.com/shorts/iFP4Qer5bXs" target="_blank" rel="noopener noreferrer">
+                  <img src="/cardimages/project3.jpg" alt="Project 3" className={styles.galleryImage} />
+                </a>
+              </div>
+              <div className={`${styles.galleryItem} ${styles.item4}`}>
+                <a href="https://www.youtube.com/watch?v=YlQHRKG8KgQ&t=7s" target="_blank" rel="noopener noreferrer">
+                  <img src="/cardimages/project4.jpg" alt="Project 4" className={styles.galleryImage} />
+                </a>
+              </div>
+              <div className={`${styles.galleryItem} ${styles.item5}`}>
+                <a href="https://www.youtube.com/shorts/dNg4apX8NKY" target="_blank" rel="noopener noreferrer">
+                  <img src="/cardimages/project5.jpg" alt="Project 5" className={styles.galleryImage} />
+                </a>
+              </div>
+              <div className={`${styles.galleryItem} ${styles.item6}`}>
+                <a href="https://www.youtube.com/shorts/WWj8RVfgZRg" target="_blank" rel="noopener noreferrer">
+                  <img src="/cardimages/project6.jpg" alt="Project 6" className={styles.galleryImage} />
+                </a>
+              </div>
             </div>
           </div>
         </section>
